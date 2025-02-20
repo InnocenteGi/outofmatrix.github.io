@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - OOM</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #FBFCFF; color: #000; text-align: center; padding: 20px; }
+        nav { background: #000; padding: 15px; position: fixed; top: 0; left: 0; width: 100%; }
+        nav a { color: #F5BC00; text-decoration: none; margin: 15px; font-size: 18px; }
+        .container { margin-top: 80px; padding: 20px; max-width: 600px; margin-left: auto; margin-right: auto; text-align: left; }
+        h1 { color: #36BF58; text-align: center; }
+        label { font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #36BF58; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        .social-icons img { width: 40px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="oque.html">O que é o OOM?</a>
+        <a href="funciona.html">Como Funciona</a>
+        <a href="vantagens.html">Vantagens</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="parceiros.html">Parceiros</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="documentacao.html">Documentação Técnica</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+        
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <h2>E-mail de Suporte</h2>
+        <p>📧 suporte@outofmatrix.com</p>
+        
+        <h2>Redes Sociais</h2>
+        <div class="social-icons">
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="telegram.png" alt="Telegram"></a>
+        </div>
+    </div>
+</body>
+</html>
