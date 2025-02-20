@@ -6,13 +6,13 @@
     <title>Out Of Matrix (OOM)</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #FBFCFF; color: #000000; }
-        nav { background: #000000; padding: 15px; position: fixed; width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        nav img { height: 50px; margin-left: 20px; }
-        nav div { display: flex; flex-wrap: wrap; justify-content: center; width: 100%; }
-        nav a { color: #F5BC00; text-decoration: none; margin: 10px; font-size: 18px; }
+        nav { background: #000000; padding: 15px; position: fixed; width: 100%; top: 0; left: 0; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
+        nav img { height: 50px; margin-right: 20px; }
+        nav div { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        nav a { color: #F5BC00; text-decoration: none; font-size: 18px; }
         .container { max-width: 1000px; margin: auto; padding: 20px; text-align: center; }
         .banner { background: url('banner.jpg') no-repeat center center/cover; color: white; padding: 100px 20px; }
-        .button { background: #36BF58; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; cursor: pointer; }
+        .button { background: #36BF58; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; cursor: pointer; text-align: center; }
         .section { padding: 50px 20px; border-bottom: 1px solid #ddd; }
         .faq, .vantagens { background: rgba(245, 188, 0, 0.1); padding: 50px 20px; }
         footer { background: #000000; color: #F5BC00; text-align: center; padding: 10px; margin-top: 30px; }
@@ -40,13 +40,19 @@
             <a href="#funciona">Como Funciona</a>
             <a href="#vantagens">Vantagens</a>
             <a href="#faq">FAQ</a>
+            <a href="#contato">Contato</a>
+            <a href="#parceiros">Parceiros</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#documentacao">Documentação Técnica</a>
         </div>
     </nav>
 
     <div class="banner">
         <h1>OOM – A revolução dos pagamentos digitais</h1>
         <p>Um token seguro, rápido e econômico para pagamentos dentro do nosso ecossistema.</p>
-        <button class="button" onclick="connectMetaMask()">Conectar à MetaMask</button>
+        <div style="text-align: center;">
+            <button class="button" onclick="connectMetaMask()">Conectar à MetaMask</button>
+        </div>
     </div>
 
     <div class="container">
@@ -80,6 +86,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
