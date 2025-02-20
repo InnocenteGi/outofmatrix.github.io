@@ -6,33 +6,61 @@
     <title>Out Of Matrix (OOM)</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #FBFCFF; color: #000000; }
-        nav { background: #000000; padding: 15px; text-align: center; position: fixed; width: 100%; top: 0; left: 0; }
+        nav { background: #000000; padding: 15px; text-align: center; position: fixed; width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; }
+        nav img { height: 50px; }
+        nav div { display: flex; align-items: center; }
         nav a { color: #F5BC00; text-decoration: none; margin: 0 15px; font-size: 18px; }
-        .container { max-width: 800px; margin: 100px auto 50px; padding: 20px; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; text-align: center; }
+        .banner { background: url('banner.jpg') no-repeat center center/cover; color: white; padding: 100px 20px; }
         .button { background: #36BF58; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
-        footer { background: #000000; color: #F5BC00; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        .section { padding: 50px 20px; border-bottom: 1px solid #ddd; }
+        .faq, .vantagens { background: rgba(245, 188, 0, 0.1); padding: 50px 20px; }
+        footer { background: #000000; color: #F5BC00; text-align: center; padding: 10px; margin-top: 30px; }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="oque.html">O que é o OOM?</a>
-        <a href="funciona.html">Como Funciona</a>
-        <a href="vantagens.html">Vantagens</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contato.html">Contato</a>
-        <a href="parceiros.html">Parceiros</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="documentacao.html">Documentação Técnica</a>
+        <img src="logo.png" alt="Logo OOM">
+        <div>
+            <a href="#sobre">O que é o OOM?</a>
+            <a href="#funciona">Como Funciona</a>
+            <a href="#vantagens">Vantagens</a>
+            <a href="#faq">FAQ</a>
+        </div>
     </nav>
-    
-    <div class="container">
-        <h1>Bem-vindo ao Out Of Matrix (OOM)</h1>
-        <p>OOM – A revolução dos pagamentos digitais.</p>
+
+    <div class="banner">
+        <h1>OOM – A revolução dos pagamentos digitais</h1>
         <p>Um token seguro, rápido e econômico para pagamentos dentro do nosso ecossistema.</p>
         <a class="button" href="#">Conectar à MetaMask</a>
     </div>
-    
+
+    <div class="container">
+        <div class="section" id="sobre">
+            <h2>O que é o OOM?</h2>
+            <p>O OOM é um token digital baseado na blockchain Polygon. Ele facilita pagamentos dentro de um ecossistema fechado, eliminando intermediários financeiros e reduzindo custos. Seu valor é fixo: 1 OOM = R$1,00.</p>
+            <a class="button" href="oque.html">Saiba mais</a>
+        </div>
+
+        <div class="section" id="funciona">
+            <h2>Como Funciona?</h2>
+            <p>Passo 1: O comprador adquire OOM com reais.<br>Passo 2: Ele pode usá-lo para pagar serviços dentro do ecossistema.<br>Passo 3: Os vendedores podem solicitar resgate em reais.</p>
+            <a class="button" href="funciona.html">Veja o passo a passo</a>
+        </div>
+
+        <div class="section vantagens" id="vantagens">
+            <h2>Vantagens</h2>
+            <p><b>Para Compradores:</b> Facilidade na aquisição de serviços, sem taxas bancárias.<br><b>Para Vendedores:</b> Redução de custos e liquidação rápida.</p>
+            <a class="button" href="vantagens.html">Entenda as vantagens</a>
+        </div>
+
+        <div class="section faq" id="faq">
+            <h2>Perguntas Frequentes</h2>
+            <p><b>O OOM é seguro?</b> Sim! Todas as transações são registradas na blockchain.<br><b>Como posso resgatar meus OOM?</b> Basta solicitar o resgate pelo emissor.</p>
+            <a class="button" href="faq.html">Veja todas as perguntas</a>
+        </div>
+    </div>
+
     <footer>
         © 2024 Out Of Matrix (OOM) - Todos os direitos reservados.
     </footer>
